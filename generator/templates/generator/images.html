@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Images</title>
+</head>
+<body>
+    <h1>Generated Images</h1>
+    <ul>
+        {% for image in images %}
+            <li>{{ image.prompt }}: <img src="{{ image.url }}" alt="{{ image.prompt }}"></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
